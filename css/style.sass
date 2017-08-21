@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Lato')
+
+$sans-title: 'Josefin Sans', sans-serif
+$sans: 'Lato', sans-serif
+
+$orange: #ff5722
+
+=background()
+  background: #FF8008
+  background: -webkit-linear-gradient(to right, #FFC837, #FF8008)
+  background: linear-gradient(to right, #FFC837, #FF8008)
+
+body
+  font-size: 16px
+  font-family: $sans
+
+a
+  text-decoration: none
+  color: white
+
+.app
+  height: 100vh
+  display: flex
+  flex-direction: column
+  +background()
+
+  .appheader
+    padding: 10px 20px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+
+    .branding
+      font-family: $sans-title
+
+    nav
+      ul
+        margin: 0
+        padding: 0
+        list-style: none
+
+        li
+          padding: 0 5px
+          display: inline
+
+          i
+            font-size: 20px
+
+  .appcontent
+    overflow: auto
+    flex: 1
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    i
+      margin: 10px 0
+      font-size: 72px
+      color: white
+
+    h1
+      margin: 10px 0
+      font-family: $sans-title
+      color: white
+
+    p
+      margin: 0
+      color: white
+
+  .appfooter
+    font-size: 12px
+
+    p
+      text-align: center
+      color: white
